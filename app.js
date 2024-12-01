@@ -19,9 +19,9 @@ function computeArea (width, height) {
     return width, height, area;
 }
 
-computeArea (width,height);
+// computeArea (width,height);
 
-console.log(`The area of a rectangle with a width of ${width} and a height of ${height} is ${area} square units`);
+// console.log(`The area of a rectangle with a width of ${width} and a height of ${height} is ${area} square units`);
 
 
 
@@ -43,6 +43,51 @@ let planetHasWater = function (planet) {
 
 
 
-console.log(planetHasWater("mars"));
-console.log(planetHasWater("earth"));
-console.log(planetHasWater('UFO'));
+// console.log(planetHasWater("mars"));
+// console.log(planetHasWater("earth"));
+// console.log(planetHasWater('UFO'));
+
+
+function testarug () {
+    let newArray = [] ;
+    console.log (arguments.length);
+    for (let i = 0; i < arguments.length; i++) {
+        console.log(arguments[i]);
+        newArray.push(arguments[i]);
+    }
+    console.log(newArray);
+}
+
+
+testarug('Mustafa', 'Alani','Muneer');
+
+
+function isValidEmail (email) {
+    return email.includes("@") && email.includes(".") ? true : false;
+}
+
+
+
+let emailVerification =  isValidEmail("mmkd_usa@yahoo.com");
+
+console.log(emailVerification);
+
+
+function isValidWebSite (webSite) {
+    return webSite.includes("www") && webSite.includes(".com") || webSite.includes(".org") ? true : false;
+}
+
+
+let validWebSite = isValidWebSite ("https://www.google.net");
+
+console.log(validWebSite);
+
+//----------------------------------------------------------------------------
+
+function firstLastName (firstName, lastName) {
+    return " First Name : " + firstName + "\n Last Name : " + lastName;
+}
+
+let fullName = firstLastName ("Mustafa", "Alani");
+
+console.log(fullName.toUpperCase());
