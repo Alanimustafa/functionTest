@@ -155,3 +155,13 @@ let shoe = {
 
 
     console.log(shoe);
+
+    //---------------------------------------------Hoisting
+    function hoist () {
+        let x ;
+        console.log("Before assigning a value X = ",x);
+        x = 15 ;
+        console.log("After assigning a value X = ", x);
+    }
+
+    hoist () ;
