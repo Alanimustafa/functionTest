@@ -137,3 +137,21 @@ function setColor (bike, color = "Purpule") {
 const newItem = setColor("Bycicle");
 
 console.log (newItem);
+
+
+//----------------------------------------------------------------------------------
+let colors = ["Red", "Green", "Blue"];
+
+colors.forEach( function (item) {
+    console.log(item);
+});
+
+
+let shoe = {
+    color: "Blue",
+    size: 12,
+    type: "running"
+}
+
+
+    console.log(shoe);
