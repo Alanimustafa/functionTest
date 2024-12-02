@@ -91,3 +91,49 @@ function firstLastName (firstName, lastName) {
 let fullName = firstLastName ("Mustafa", "Alani");
 
 console.log(fullName.toUpperCase());
+
+
+//-----------------------------------------------------------------------------
+
+let maria = getDevObject('Maria', 'HTML', 'CSS', 'JavaScript', 'jQuery');
+
+function getDevObject(name) {
+    let skills = [] ;
+    for (let i = 1; i < arguments.length; i++) {
+        skills.push(arguments[i]);
+    } return {
+        devName: name,
+        jobSkills: skills
+    };
+}
+
+console.log (maria);
+
+
+//-----------------------------------------------------------------------------
+
+let mustafa = getDevEmp('Mustafa', 46, 'HTML', 'CSS', 'JavaScript', 'jQuery');
+
+function getDevEmp (name, age, ...skls) {
+
+    return {
+        devName1: "Developer :" + name,
+        devAge: age,
+        devSkills: skls
+    }
+}
+
+console.log(mustafa);
+
+//-----------------------------------------------------------------------------
+
+// To set a default parameter
+
+function setColor (bike, color = "Purpule") {
+   return  (bike.color = color) + " " + bike ;
+}
+
+
+const newItem = setColor("Bycicle");
+
+console.log (newItem);
